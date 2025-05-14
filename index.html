@@ -1,0 +1,67 @@
+<style>
+.carousel {
+  position: relative;
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  width: 280px;
+  height: 200px;
+  margin: 0 10px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 10px;
+  transition: transform 0.8s ease, z-index 0.8s ease;
+  position: absolute;
+}
+
+</style>
+<div class="carousel">
+    <div class="slide" id="slide1">Slide 1</div>
+    <div class="slide" id="slide2">Slide 2</div>
+    <div class="slide" id="slide3">Slide 3</div>
+</div>
+
+<div class="navigation">
+    <button onclick="nextSlide()">Next</button>
+</div>
+  
+<script>
+ const slides = [
+  document.getElementById("slide1"),
+  document.getElementById("slide2"),
+  document.getElementById("slide3")
+];
+
+let positions = [
+  { transform: "translateX(-320px) rotateY(55deg)", zIndex: 1 },
+  { transform: "translateX(0) rotateY(0deg)", zIndex: 2 },
+  { transform: "translateX(320px) rotateY(-15deg)", zIndex: 1 },
+];
+
+function updatePositions() {
+  slides.forEach((slide, i) => {
+    slide.style.transform = positions[i].transform;
+    slide.style.zIndex = positions[i].zIndex;
+  });
+}
+
+function nextSlide() {
+  positions.unshift(positions.pop()); // xoay vị trí
+  updatePositions();
+}
+
+updatePositions(); // gọi lần đầu để setup
+
+
+</script>
+  

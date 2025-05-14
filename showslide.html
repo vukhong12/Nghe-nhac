@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Slideshow</title>
+    <style>
+        /* Slideshow Container */
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Slides */
+        .mySlides {
+            display: none;
+            /* Ẩn slide theo mặc định */
+            width: 100%;
+        }
+
+        /* Navigation Buttons */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <img class="mySlides" src="img/image.png" alt="Image 1">
+        <!-- Slide 2 -->
+        <img class="mySlides" src="icon/OIP.jpg" alt="Image 2">
+        <!-- Slide 3 -->
+        <img class="mySlides" src="icon/br.png" alt="Image 3">
+
+        <!-- Navigation Buttons -->
+        <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+        <div class="next" onclick="plusSlides(1)">&#10095;</div>
+    </div>
+
+    <script>
+        // Biến lưu vị trí slide hiện tại
+        let slideIndex = 0;
+
+        // Hàm hiển thị slide
+        function showSlides() {
+            const slides = document.querySelectorAll(".mySlides");
+            // Ẩn tất cả slide
+            slides.forEach(slide => slide.style.display = "none");
+            // Hiển thị slide tiếp theo
+            slideIndex = (slideIndex + 1) % slides.length; // Nếu vượt quá số slide thì quay về slide đầu tiên
+            slides[slideIndex].style.display = "block";
+        }
+
+        // Điều khiển slide trước hoặc sau
+        function plusSlides(n) {
+            const slides = document.querySelectorAll(".mySlides");
+            slides[slideIndex].style.display = "none"; // Ẩn slide hiện tại
+            slideIndex = (slideIndex + n + slides.length) % slides.length; // Tính chỉ số slide mới
+            slides[slideIndex].style.display = "block"; // Hiển thị slide mới
+        }
+
+        // Tự động chạy slide
+        setInterval(showSlides, 3000); // Chuyển slide mỗi 3 giây
+
+        // Hiển thị slide đầu tiên ngay khi tải trang
+        showSlides();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="styletc.css">
+</head>
+
+<body>
+    <header class="header-menu">
+        <div class="logo">
+            <img src="icon/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home"><i class="fa-solid fa-house"></i>
+                        <p>Trang chủ</p>
+                    </a></li>
+                <li><a href="/library"><i class="fa-solid fa-star"></i>
+                        <p>Top 100</p>
+                    </a></li>
+                <li><a href="/discover"><i class="fa-solid fa-music"></i>
+                        <p>Khám Phá</p>
+                    </a></li>
+                <li><a href="/playlists"><i class="fa-solid fa-list"></i>
+                        <p>Danh Sách</p>
+                    </a></li>
+                <li><a href="/history"><i class="fa-regular fa-clock"></i>
+                        <p>Lịch Sử</p>
+                    </a></li>
+                <li><a href="/favorites"><i class="fa-regular fa-heart"></i>
+                        <p>Yêu Thích</p>
+                    </a></li>
+                <li><a href="/account"><i class="fa-solid fa-user"></i>
+                        <p>Tài Khoản</p>
+                    </a></li>
+                <li><a href="/settings"><i class="fa-solid fa-cogs"></i>
+                        <p>Cài Đặt</p>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="homepage-main">
+        <section class="banner">
+            <img src="banner.jpg" alt="Khuyến mãi giảm giá 50%">
+            <h1>Chào mừng đến trang nghe nhạc của tôi!</h1>
+        </section>
+
+        <section class="process-steps">
+            <!-- Step 1: Search -->
+            <article class="step">
+                <img src="" alt="">
+                <h3>Search</h3>
+                <p>1900+ bottles to choose from</p>
+            </article>
+
+            <!-- Step 2: -->
+            <article class="step">
+                <img src="" alt="">
+                <h3>Tap</h3>
+                <p>Checkout in seconds with express checkout</p>
+            </article>
+
+            <!-- Step 3:  -->
+            <article class="step">
+                <img src="" alt="">
+                <h3>Drink</h3>
+                <p>Delivered to your door within days</p>
+            </article>
+        </section>
+        <section class="song-list">
+            <article class="song-item">
+                <header>
+                    <h2>Tên Bài Hát 1</h2>
+                    <p>Ca sĩ: Ca Sĩ 1</p>
+                </header>
+                <img src="album1.jpg" alt="Bìa Album 1">
+                <p>Mô tả ngắn gọn về Bài Hát 1.</p>
+                <footer>
+                    <p>Thể loại: Pop</p>
+                    <p>Thời lượng: 3:45</p>
+                    <a href="link-to-song1">Nghe bài hát</a>
+                </footer>
+            </article>
+            <article class="song-item">
+                <header>
+                    <h2>Tên Bài Hát 2</h2>
+                    <p>Ca sĩ: Ca Sĩ 2</p>
+                </header>
+                <img src="album2.jpg" alt="Bìa Album 2">
+                <p>Mô tả ngắn gọn về Bài Hát 2.</p>
+                <footer>
+                    <p>Thể loại: Rock</p>
+                    <p>Thời lượng: 4:20</p>
+                    <a href="link-to-song2">Nghe bài hát</a>
+                </footer>
+            </article>
+        </section>
+
+
+    </main>
+    <footer class="main-footer">
+
+    </footer>
+</body>
+
+</html>
+
+<script>
+    window.addEventListener('load', function () {
+        const links = document.querySelectorAll('nav a');
+        const currentPath = window.location.pathname;
+
+        links.forEach(link => {
+            const linkPath = link.getAttribute('href');
+            if (currentPath === linkPath || currentPath === linkPath + '/') {
+                link.classList.add('active');
+            }
+        });
+    });
+
+
+</script>

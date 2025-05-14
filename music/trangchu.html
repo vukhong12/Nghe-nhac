@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+</head>
+
+<body>
+    <header class="header-menu">
+        <div class="logo">
+            <img src="icon/Logo.png" alt="">
+        </div>
+        <div class="search">
+            <input type="search"><label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+        </div>
+        <label class="checkbox" for="check"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" name="" id="check">
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i>
+                        <p>Trang chủ</p>
+                    </a></li>
+                <li><a href="/library"><i class="fa-solid fa-star"></i>
+                        <p>Top 100</p>
+                    </a></li>
+                <li><a href="/discover"><i class="fa-solid fa-music"></i>
+                        <p>Khám Phá</p>
+                    </a></li>
+                <li><a href="/playlists"><i class="fa-solid fa-list"></i>
+                        <p>Danh Sách</p>
+                    </a></li>
+                <li><a href="/history"><i class="fa-regular fa-clock"></i>
+                        <p>Lịch Sử</p>
+                    </a></li>
+                <li><a href="/favorites"><i class="fa-regular fa-heart"></i>
+                        <p>Yêu Thích</p>
+                    </a></li>
+                <li><a href="/account"><i class="fa-solid fa-user"></i>
+                        <p>Tài Khoản</p>
+                    </a></li>
+                <!-- <li><a href="/settings"><i class="fa-solid fa-cogs"></i><p>Cài Đặt</p></a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main class="homepage-main">
+        <!-- Banner -->
+        <section class="banner">
+            <h1>Welcome to the World of Music!</h1>
+            <p>Discover and enjoy your favorite tunes.</p>
+            <button>Đăng ký</button>
+        </section>
+
+        <!-- Content -->
+
+        <!-- Top Nhạc trong tuần -->
+        <article class="music-article">
+            <header>
+                <h2>Top Music Hits of the Week</h2>
+            </header>
+            <section>
+                <p>Cập nhật ngay những bản hit đang làm mưa làm gió trên các bảng xếp hạng âm nhạc! Tuần này, chúng ta
+                    chứng
+                    kiến sự bùng nổ của nhiều giai điệu mới đầy cảm xúc, cùng những cái tên quen thuộc trong làng nhạc.
+                </p>
+            </section>
+            <section class="song-list">
+                <div class="song">
+                    <a href="link-bai-hat-1" title="Tên bài hát 1 - Tên ca sĩ">
+                        <h2>Top 4</h2>
+                        <div class="song-thumbnail">
+                            <img src="img/image.png" alt="Tên bài hát 1 - Tên ca sĩ">
+                            <div class="head">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-circle-play"></i>
+                                <!-- dấu 3 chấm -->
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 1</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-2" title="Tên bài hát 2 - Tên ca sĩ">
+                        <h2>Top 2</h2>
+                        <div class="song-thumbnail">
+                            <img src="img/pmq.png" alt="Tên bài hát 2 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 2</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-3" title="Tên bài hát 3 - Tên ca sĩ">
+                        <h2>Top 1</h2>
+                        <div class="song-thumbnail">
+                            <img src="link-hinh-anh-3.jpg" alt="Tên bài hát 3 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 3</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-4" title="Tên bài hát 4 - Tên ca sĩ">
+                        <h2>Top 3</h2>
+                        <div class="song-thumbnail">
+                            <img src="link-hinh-anh-4.jpg" alt="Tên bài hát 4 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 4</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-5" title="Tên bài hát 5 - Tên ca sĩ">
+                        <h2>Top 5</h2>
+                        <div class="song-thumbnail">
+                            <img src="link-hinh-anh-5.jpg" alt="Tên bài hát 5 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 5</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <div class="mirror song-list">
+                <div class="song">
+                    <a href="link-bai-hat-1" title="Tên bài hát 1 - Tên ca sĩ">
+                        <h2>Top 4</h2>
+                        <div class="song-thumbnail">
+                            <img src="img/image.png" alt="Tên bài hát 1 - Tên ca sĩ">
+                            <div class="head">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-circle-play"></i>
+                                <!-- dấu 3 chấm -->
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 1</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-2" title="Tên bài hát 2 - Tên ca sĩ">
+                        <h2>Top 2</h2>
+                        <div class="song-thumbnail">
+                            <img src="img/pmq.png" alt="Tên bài hát 2 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 2</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-3" title="Tên bài hát 3 - Tên ca sĩ">
+                        <h2>Top 1</h2>
+                        <div class="song-thumbnail">
+                            <img src="link-hinh-anh-3.jpg" alt="Tên bài hát 3 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 3</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-4" title="Tên bài hát 4 - Tên ca sĩ">
+                        <h2>Top 3</h2>
+                        <div class="song-thumbnail">
+                            <img src="link-hinh-anh-4.jpg" alt="Tên bài hát 4 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 4</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="link-bai-hat-5" title="Tên bài hát 5 - Tên ca sĩ">
+                        <h2>Top 5</h2>
+                        <div class="song-thumbnail">
+                            <img src="link-hinh-anh-5.jpg" alt="Tên bài hát 5 - Tên ca sĩ">
+                        </div>
+                        <div class="song-info">
+                            <h3>Tên bài hát 5</h3>
+                            <p>Ca sĩ: Tên ca sĩ</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bảng xếp hạng -->
+        <article class="top-songs">
+            <div class="container">
+                <div id="slide">
+                    <div class="item" style="background-image: url(1.jpg);">
+                        <div class="content">
+                            <div class="name">LUNDEV</div>
+                            <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(4.jpg);">
+                        <div class="content">
+                            <div class="name">LUNDEV</div>
+                            <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(3.jpg);">
+                        <div class="content">
+                            <div class="name">LUNDEV</div>
+                            <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(4.jpg);">
+                        <div class="content">
+                            <div class="name">LUNDEV</div>
+                            <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(5.jpg);">
+                        <div class="content">
+                            <div class="name">LUNDEV</div>
+                            <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(6.jpg);">
+                        <div class="content">
+                            <div class="name">LUNDEV</div>
+                            <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </article>
+        <!-- có thể nghe -->
+         <article class="audible">
+            
+            <section class="ab-item">
+                <div class="">
+
+                </div>
+                <header>
+                    <h2 class="headline">Có thể Nghe</h2>
+                </header>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div> 
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </section>
+         </article>
+        <!-- Mới phát hành -->
+        <article class="new-songs">
+            <header>
+                <h2 class="headline">Mới Phát Hành</h2>
+            </header>
+            <section class="new-list">
+                <div class="nl-item">
+                    <div class="nl-img">
+                        <img src="img/image.png" alt="">
+                            <div class="nl-play">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-circle-play"></i>
+                                <!-- dấu 3 chấm -->
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        <small>3:45</small>
+                    </div>
+                    <div class="nl-info">
+                        <h3>Tên bài hát 1 </h3>
+                        <p>Ca sĩ: Tên ca sĩ</p>
+                    </div>
+                </div>
+                <div class="nl-item">
+                    <div class="nl-img">
+                        <img src="img/image.png" alt="">
+                        <small>3:45</small>
+                    </div>
+                    <div class="nl-info">
+                        <h3>Tên bài hát 1 </h3>
+                        <p>Ca sĩ: Tên ca sĩ</p>
+                    </div>
+                </div>
+                <div class="nl-item">
+                    <div class="nl-img">
+                        <img src="img/image.png" alt="">
+                        <small>3:45</small>
+                    </div>
+                    <div class="nl-info">
+                        <h3>Tên bài hát 2 </h3>
+                        <p>Ca sĩ: Tên ca sĩ</p>
+                    </div>
+                </div>
+                <div class="nl-item">
+                    <div class="nl-img">
+                        <img src="img/image.png" alt="">
+                        <small>3:45</small>
+                    </div>
+                    <div class="nl-info">
+                        <h3>Tên bài hát 3 </h3>
+                        <p>Ca sĩ: Tên ca sĩ</p>
+                    </div>
+                </div>
+                <div class="nl-item">
+                    <div class="nl-img">
+                        <img src="img/image.png" alt="">
+                        <small>3:45</small>
+                    </div>
+                    <div class="nl-info">
+                        <h3>Tên bài hát 4 </h3>
+                        <p>Ca sĩ: Tên ca sĩ</p>
+                    </div>
+                </div>
+                <div class="nl-item">
+                    <div class="nl-img">
+                        <img src="img/image.png" alt="">
+                        <small>3:45</small>
+                    </div>
+                    <div class="nl-info">
+                        <h3>Tên bài hát 5 </h3>
+                        <p>Ca sĩ: Tên ca sĩ</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+
+    </main>
+
+    <footer class="main-footer">
+
+    </footer>
+</body>
+
+</html>
+
+<script>
+    document.getElementById('next').onclick = function () {
+        let lists = document.querySelectorAll('.item');
+        document.getElementById('slide').appendChild(lists[0]);
+    }
+    document.getElementById('prev').onclick = function () {
+        let lists = document.querySelectorAll('.item');
+        document.getElementById('slide').prepend(lists[lists.length - 1]);
+    }
+</script>
